@@ -56,9 +56,9 @@ function blog () {
         }
 
         if (id) {
-            xhr.open('POST', 'http://restedblog.herokuapp.com/kruti/api/' + id);
+            xhr.open('POST', 'https://restedblog.herokuapp.com/kruti/api/' + id);
         } else {
-            xhr.open('POST', 'http://restedblog.herokuapp.com/kruti/api/ ');
+            xhr.open('POST', 'https://restedblog.herokuapp.com/kruti/api/ ');
         }
 
         xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
@@ -113,7 +113,7 @@ function blog () {
             xhr = new ActiveXObject('Microsoft.XMLHTTP');
         }
 
-        xhr.open('GET', 'http://restedblog.herokuapp.com/kruti/api/ ');
+        xhr.open('GET', 'https://restedblog.herokuapp.com/kruti/api/ ');
         xhr.onload = function() {
             if (xhr.status === 200) {
                 var responseData = JSON.parse(xhr.responseText);
@@ -154,7 +154,7 @@ function blog () {
         else if(window.ActiveXObject) {
             xhr = new ActiveXObject('Microsoft.XMLHTTP');
         }
-        var url = 'http://restedblog.herokuapp.com/kruti/api/' + id;
+        var url = 'https://restedblog.herokuapp.com/kruti/api/' + id;
 
         xhr.open('DELETE', url);
         xhr.onload = function() {
