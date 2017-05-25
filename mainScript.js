@@ -113,7 +113,7 @@ function blog () {
             xhr = new ActiveXObject('Microsoft.XMLHTTP');
         }
 
-        xhr.open('GET', 'https://restedblog.herokuapp.com/kruti/api/ ');
+        xhr.open('GET', 'http://restedblog.herokuapp.com/kruti/api/ ');
         xhr.onload = function() {
             if (xhr.status === 200) {
                 var responseData = JSON.parse(xhr.responseText);
