@@ -1,0 +1,200 @@
+* {
+    margin:0;
+    padding:0;
+}
+
+body{
+    font: normal 16px Arial, Helvetica, sans-serif;
+}
+
+h1{
+    font: normal 24px 'Open Sans', Arial, Helvetica, sans-serif;
+    color: #ffffff;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    color: #000000;
+    text-align: center;
+    background-color: #ffffff;
+    height: 40px;
+    z-index: 100;
+    background-image: url(https://www.salesforce.com/content/dam/web/en_us/www/images/nav/salesforce-cloud-logo-sm.png);
+    background-repeat: no-repeat;
+    background-size: 75px 50px;
+    padding: 10px;
+    background-position: 10px 5px;
+    background-color: gray;
+}
+
+header .create-post {
+    float: right;
+    right: 40px;
+    margin-right: 40px;
+    margin-top: -33px;
+    padding: 10px;
+    border-radius: 37px;
+    background-color: #01a3d6;
+    border-color: #01a3d6;
+    color: white;
+}
+
+header .create-post:hover {
+    background: rgba(0,0,0,0);
+    color: #01a3d6;
+    box-shadow: inset 0 0 0 3px #FFFFFF;
+    background-color: #FFFFFF;
+    cursor: pointer;
+}
+
+.main-content{
+    box-sizing: border-box;
+    margin-top: 60px;
+    overflow: auto;
+}
+.card-view{
+    min-height: 370px;
+    width: 30%;
+    float: left;
+    margin: 20px;
+    position: relative;
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.19), 0 6px 20px rgba(0,0,0,0.23);
+}
+
+.card-view .title-holder {
+    padding: 20px;
+}
+
+.card-view .blog-title-text {
+    text-transform: uppercase;
+}
+
+.card-view .blog-text {
+    padding: 10px 20px;
+    text-align: justify;
+}
+
+.card-view .timestamp {
+    font-size: 10px
+}
+
+.create-view {
+    z-index: 100;
+    width: 50%;
+    height: 85%;
+    margin: auto;
+    position: absolute;
+    left: 25%;
+    background: #ffffff;
+    color:black;
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.19), 0 6px 20px rgba(0,0,0,0.23);
+    margin-top: 25px;
+}
+
+.hide {
+    display: none;
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background: black;
+    z-index: 10;
+    opacity: 0.7;
+}
+
+.create-new-title input {
+    width: 600px;
+    height: 45px;
+    margin-left: 55px;
+}
+
+.create-new-text textarea {
+    width: 600px;
+    margin-left: 55px;
+    height: 350px;
+    resize:none;
+    border-color: lightgray;
+}
+
+.create-new-title span, .create-new-text span {
+    display:block;
+    text-transform: uppercase;
+    margin-left: 55px;
+    margin-top: 35px;
+}
+
+.save-new-post {
+    height: 40px;
+    width: 100px;
+    float: right;
+    margin-right: 50%;
+    text-align: center;
+    line-height: 38px;
+    position: absolute;
+    bottom: 50px;
+    left: 300px;
+    background-color: #008080;
+    border-radius: 30px;
+    color: white;
+
+}
+
+.actions-view {
+    position: absolute;
+    bottom: 10px;
+    padding: 0 20px;
+    left: 25%;
+}
+
+.delete-post {
+    height: 30px;
+    width: 70px;
+    text-align: center;
+    border-radius: 15px;
+    line-height: 29px;
+    background-color: #e8673e;
+    color: white;
+    float: right;
+    margin: 10px;
+    font-size: 14px;
+}
+
+.edit-post {
+    height: 30px;
+    width: 70px;
+    text-align: center;
+    border-radius: 15px;
+    line-height: 29px;
+    background-color: #008080;
+    color: white;
+    float: right;
+    margin: 10px;
+    font-size: 14px;
+
+}
+
+.edit-post:hover {
+    background: rgba(0,0,0,0);
+    color: #008080;
+    box-shadow: inset 0 0 0 3px #008080;
+    cursor: pointer;
+}
+
+.delete-post:hover {
+    background: rgba(0,0,0,0);
+    color: #e8673e;
+    box-shadow: inset 0 0 0 3px #e8673e;
+    cursor: pointer;
+}
+
+.save-new-post:hover {
+    background: rgba(0,0,0,0);
+    color: #008080;
+    box-shadow: inset 0 0 0 3px #008080;
+    cursor: pointer;
+}
